@@ -22,7 +22,7 @@ object MyScala {
     //连接socekt 获取输入数据
 
     //获取数据: 从socket中获取
-    val textDataStream = env.socketTextStream("localhost", port, '\n')
+    val textDataStream = env.socketTextStream("localhost",port, '\n')
 
     // 解析数据(把数据打平)，分组，窗口计算并且
     val WindowCounts = textDataStream.flatMap(line => line.split("\\s")) // 打平
