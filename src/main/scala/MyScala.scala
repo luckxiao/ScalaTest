@@ -35,5 +35,4 @@ object MyScala {
     //启动执行器，执行程序
     env.execute("Socket Window WordCount")
   }
-
 }
